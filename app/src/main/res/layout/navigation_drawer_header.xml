@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="220dp"
+    android:orientation="vertical"
+    android:gravity="bottom"
+    android:padding="10dp"
+    android:background="@color/teal_700">
+    <ImageView
+        android:id="@+id/iv_profile"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/profile"/>
+    <TextView
+        android:id="@+id/tv_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sam Paul"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/white"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="sampaul.org"
+        android:textColor="@color/white"
+        android:layout_gravity="center_horizontal"
+        android:textSize="10sp"
+        android:layout_marginBottom="10dp"
+        android:textStyle="italic"/>
+</LinearLayout>
