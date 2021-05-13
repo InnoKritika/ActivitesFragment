@@ -6,7 +6,7 @@ public class GroceryItem {
     int id;
     String name;
     String description;
-    int imageUrl;
+    String imageUrl;
     String category;
     double price;
     int availableAmount;
@@ -15,7 +15,7 @@ public class GroceryItem {
     int popularityPoints;
     ArrayList<Review> reviewArrayList;
 
-    public GroceryItem( String name, String description, int imageUrl, String category, double price, int availableAmount) {
+    public GroceryItem( String name, String description, String imageUrl, String category, double price, int availableAmount) {
         this.id = Utils.getId();
         this.name = name;
         this.description = description;
@@ -53,11 +53,11 @@ public class GroceryItem {
         this.description = description;
     }
 
-    public int getImageUrl() {
+    public String getImageUrl() {
         return imageUrl;
     }
 
-    public void setImageUrl(int imageUrl) {
+    public void setImageUrl(String imageUrl) {
         this.imageUrl = imageUrl;
     }
 

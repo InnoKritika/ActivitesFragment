@@ -53,6 +53,7 @@ public class GroceryItemAdapter extends RecyclerView.Adapter<GroceryItemAdapter.
         return arrayList.size();
     }
 
+
     public class ViewHolder extends RecyclerView.ViewHolder{
         TextView name,price;
         ImageView image;

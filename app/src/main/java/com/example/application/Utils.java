@@ -27,8 +27,16 @@ public class Utils {
     private static void initAllItems(Context context) {
         ArrayList<GroceryItem> allItems = new ArrayList<>();
         GroceryItem milk = new GroceryItem("Milk","It's packed with important nutrients like calcium, phosphorus, B vitamins, potassium and vitamin D. "
-                , R.drawable.milk,"drink",55,0);
+                , "https://www.google.com/search?q=milk&rlz=1C1CHBF_enIN927IN927&source=lnms&tbm=isch&sa=X&ved=2ahUKEwj8gPqinMfwAhVHfSsKHWK7DDwQ_AUoAXoECAIQAw#imgrc=LRC_2wfs_X9pWM","drink",55,0);
         allItems.add(milk);
+
+        GroceryItem iceCream = new GroceryItem("Ice - Cream","Ice cream, frozen dairy food made from cream or butterfat, milk, sugar, and flavourings.",
+                "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.allrecipes.com%2Frecipe%2F19002%2Ffive-ingredient-ice-cream%2F&psig=AOvVaw1bBhY03qblpfsfXc0Po51J&ust=1621014690567000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCPCK77qcx_ACFQAAAAAdAAAAABAD","food",540,15);
+        allItems.add(iceCream);
+
+        GroceryItem soda = new GroceryItem("Soda","Carbonated drinks or fizzy drinks are beverages that contain dissolved carbon dioxide",
+                "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.indiamart.com%2Fproddetail%2Fkinley-soda-21492065197.html&psig=AOvVaw2CK53kLC4m3VoI4AzfsAHx&ust=1621014712564000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCMjKzsScx_ACFQAAAAAdAAAAABAD","drink",120,10);
+        allItems.add(soda);
 
         SharedPreferences sharedPreferences = context.getSharedPreferences(db_name,Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPreferences.edit();
